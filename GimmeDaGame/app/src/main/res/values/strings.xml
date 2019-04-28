@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">GimmeDaGame</string>
+
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="btn_continue">Continue</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="title_activity_lobby">LobbyActivity</string>
+    <string name="title_activity_posters">PostersActivity</string>
+</resources>

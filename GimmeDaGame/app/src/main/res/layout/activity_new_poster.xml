@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.NewPosterActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_add_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Add new poster" />
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Title"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_description"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/edit_text_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_price"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/edit_text_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Price"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_phone"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Phone"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_email"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/edit_text_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Email"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/edit_text_location"
+        tools:layout_editor_absoluteX="27dp" />
+
+    <EditText
+        android:id="@+id/edit_text_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="292dp"
+        android:hint="Location"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button_save_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Add poster"
+        android:onClick="addNewPoster"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_location" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
